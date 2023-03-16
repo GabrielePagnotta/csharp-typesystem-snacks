@@ -4,7 +4,8 @@
 //snack3();
 //snack4();
 //snack5();
-snack6();
+//snack6();
+snack7();
 
 
 void snack1()
@@ -113,7 +114,7 @@ void snack6()
 
     for (int i = 0; i <= InvitatiGatsby.Length; i++)
     {
-        
+
         Console.WriteLine("inserisci il tuo nome:");
         string Request = Console.ReadLine();
 
@@ -127,8 +128,39 @@ void snack6()
             Console.WriteLine("Mi dispiace, non sei invitato");
             continue;
         }
-        
+
     }
 
 
 }
+void snack7()
+{
+    int[] array = new int[6];
+    
+
+    for (int i = 0; i < 6; i++)
+    {
+        Console.WriteLine("inserisci un numero");
+        var Input = Convert.ToInt32(Console.ReadLine());
+
+
+        if (Input % 2 != 0)
+        {
+            array[i] = Input;
+            
+        }
+        else
+        {
+            Console.WriteLine("devi inserire un numero dispari");
+            
+        }
+    }
+    for (int x = 0; x < array.Length; x++)
+    {
+       var totalView = array[x];
+        Console.WriteLine(totalView);
+    }
+} 
+
+
+    
