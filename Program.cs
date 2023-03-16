@@ -5,7 +5,8 @@
 //snack4();
 //snack5();
 //snack6();
-snack7();
+//snack7();
+snack8();
 
 
 void snack1()
@@ -161,6 +162,21 @@ void snack7()
         Console.WriteLine(totalView);
     }
 } 
+void snack8()
+{
+    int[] ArrNum =
+    {
+        1,4,8,3,5,10
+    };
+
+    for(int i = 0; i < ArrNum.Length; i+=2)
+    {
+        
+          Console.WriteLine(ArrNum[i]);
+        
+        
+    }
+}
 
 
     
