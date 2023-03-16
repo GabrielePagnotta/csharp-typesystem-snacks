@@ -6,7 +6,8 @@
 //snack5();
 //snack6();
 //snack7();
-snack8();
+//snack8();
+snack9();
 
 
 void snack1()
@@ -170,11 +171,28 @@ void snack8()
     };
 
     for(int i = 0; i < ArrNum.Length; i+=2)
-    {
-        
+    { 
           Console.WriteLine(ArrNum[i]);
-        
-        
+       
+    }
+}void snack9()
+{
+    double[] Numbers = new double[50];
+    int Cicle = 0;
+
+    while (Cicle < 50)
+    {
+        Console.WriteLine("inserisci un numero");
+        var Input = Convert.ToDouble(Console.ReadLine());
+        Numbers[Cicle] = Input;
+        Cicle++;
+
+
+    }
+
+    for(int i = 0; i < Numbers.Length; i++)
+    {
+        Console.WriteLine(Numbers[i]);
     }
 }
 
