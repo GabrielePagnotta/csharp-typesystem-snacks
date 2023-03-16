@@ -3,7 +3,10 @@
 //snack2();
 //snack3();
 //snack4();
-snack5();
+//snack5();
+snack6();
+
+
 void snack1()
 {
     /*
@@ -13,20 +16,22 @@ void snack1()
 
     int num1 = Convert.ToInt32(Console.ReadLine());
     int num2 = Convert.ToInt32(Console.ReadLine());
-    
 
-    if(num1 > num2){
+
+    if (num1 > num2)
+    {
         Console.WriteLine(num1);
     }
-    else if(num2 > num1) { 
+    else if (num2 > num1)
+    {
         Console.WriteLine(num2);
     }
     else
     {
         Console.WriteLine("sono uguali");
     }
-    
-    
+
+
 }
 void snack2()
 {
@@ -35,23 +40,25 @@ void snack2()
     string word1 = Console.ReadLine();
     string word2 = Console.ReadLine();
 
-    if(word1.Length > word2.Length)
+    if (word1.Length > word2.Length)
     {
         Console.WriteLine(word2);
         Console.WriteLine(word1);
     }
-    else 
+    else
     {
         Console.WriteLine(word1);
         Console.WriteLine(word2);
     }
 }
 
-void snack3(){
+void snack3()
+{
 
     //il software chiede 10 volte all'utente di inserire un numero, il programma stampa la somma di tutti i numeri inseriti.
     int sum = 0;
-    for(int i = 0; i < 10; i++) { 
+    for (int i = 0; i < 10; i++)
+    {
 
         var InputNumber = Convert.ToInt32(Console.ReadLine());
         sum += InputNumber;
@@ -64,35 +71,64 @@ void snack4()
     //calcola la somma e la media dei numeri da 2 a 10
 
     int num = 2;
-    
-    
 
-    for(int i = 2; i < 10 ; i++)
+
+
+    for (int i = 2; i < 10; i++)
     {
-      num++;
-      num += i;
-        
-        
+        num++;
+        num += i;
+
+
 
 
     }
     int sum = num / 8;
     Console.WriteLine(sum);
-    
+
 }
 void snack5()
 {
     //il software chiede all'utente di inserire un numero, si il numero inserito è pari stampa il numerom, se è dispari stampa il numero successivo.
     string AskingUser = "Ciao Paolo inserisci un numero";
     Console.WriteLine(AskingUser);
-   int UserInput = Convert.ToInt32(Console.ReadLine());
+    int UserInput = Convert.ToInt32(Console.ReadLine());
 
-    if(UserInput % 2 == 0)
+    if (UserInput % 2 == 0)
     {
         Console.WriteLine(UserInput);
     }
-    else if(UserInput % 2 != 0)
+    else if (UserInput % 2 != 0)
     {
         Console.WriteLine(UserInput + 1);
     }
+}
+void snack6()
+{
+
+    string[] InvitatiGatsby =
+    {
+        "Gennaro","Luca","Gabriele","yuri"
+    };
+
+    for (int i = 0; i <= InvitatiGatsby.Length; i++)
+    {
+        
+        Console.WriteLine("inserisci il tuo nome:");
+        string Request = Console.ReadLine();
+
+        if (InvitatiGatsby.Contains(Request))
+        {
+            Console.WriteLine("sei invitato");
+            break;
+        }
+        else
+        {
+            Console.WriteLine("Mi dispiace, non sei invitato");
+            continue;
+        }
+        
+    }
+
+
 }
