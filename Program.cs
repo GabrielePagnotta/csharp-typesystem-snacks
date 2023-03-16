@@ -1,6 +1,9 @@
 ﻿
 //snack1();
-snack2();
+//snack2();
+using System.Diagnostics.CodeAnalysis;
+
+snack3();
 void snack1()
 {
     /*
@@ -42,5 +45,18 @@ void snack2()
         Console.WriteLine(word1);
         Console.WriteLine(word2);
     }
+}
+
+void snack3(){
+
+    //il software chiede 10 volte all'utente di inserire un numero, il programma stampa la somma di tutti i numeri inseriti.
+    int sum = 0;
+    for(int i = 0; i < 10; i++) { 
+
+        var InputNumber = Convert.ToInt32(Console.ReadLine());
+        sum += InputNumber;
+
+    }
+    Console.WriteLine($"la somma totale dei numeri inseriti è {sum}");
 }
 
