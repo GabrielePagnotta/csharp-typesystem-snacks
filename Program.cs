@@ -1,9 +1,8 @@
 ﻿
 //snack1();
 //snack2();
-using System.Diagnostics.CodeAnalysis;
-
-snack3();
+//snack3();
+snack4();
 void snack1()
 {
     /*
@@ -58,5 +57,26 @@ void snack3(){
 
     }
     Console.WriteLine($"la somma totale dei numeri inseriti è {sum}");
+}
+void snack4()
+{
+    //calcola la somma e la media dei numeri da 2 a 10
+
+    int num = 2;
+    
+    
+
+    for(int i = 2; i < 10 ; i++)
+    {
+      num++;
+      num += i;
+        
+        
+
+
+    }
+    int sum = num / 8;
+    Console.WriteLine(sum);
+    
 }
 
