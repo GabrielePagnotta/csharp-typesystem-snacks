@@ -2,7 +2,8 @@
 //snack1();
 //snack2();
 //snack3();
-snack4();
+//snack4();
+snack5();
 void snack1()
 {
     /*
@@ -79,4 +80,19 @@ void snack4()
     Console.WriteLine(sum);
     
 }
+void snack5()
+{
+    //il software chiede all'utente di inserire un numero, si il numero inserito è pari stampa il numerom, se è dispari stampa il numero successivo.
+    string AskingUser = "Ciao Paolo inserisci un numero";
+    Console.WriteLine(AskingUser);
+   int UserInput = Convert.ToInt32(Console.ReadLine());
 
+    if(UserInput % 2 == 0)
+    {
+        Console.WriteLine(UserInput);
+    }
+    else if(UserInput % 2 != 0)
+    {
+        Console.WriteLine(UserInput + 1);
+    }
+}
