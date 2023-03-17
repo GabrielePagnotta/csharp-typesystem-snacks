@@ -9,7 +9,8 @@
 //snack8();
 //snack9();
 //snack10();
-snack11();
+//snack11();
+snack12();
 
 
 void snack1()
@@ -239,6 +240,29 @@ void snack11()
         
     }
     Words();
+}
+void snack12()
+{
+    bool numbers()
+    {   
+        Console.WriteLine("inserisci il numero da controlare");
+        int num = Convert.ToInt32( Console.ReadLine());
+        
+        bool sold= false;   
+        
+
+        if (num % 2 == 0)
+        {
+            Console.WriteLine("il numero è pari");
+            return true;
+        }
+        else
+        {
+            Console.WriteLine("il numero è dispari");
+            return true;
+        }
+    }
+    numbers();
 }
 
 
