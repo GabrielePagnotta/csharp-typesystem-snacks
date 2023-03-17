@@ -8,7 +8,8 @@
 //snack7();
 //snack8();
 //snack9();
-snack10();
+//snack10();
+snack11();
 
 
 void snack1()
@@ -215,6 +216,29 @@ void snack10()
         
         }
     
+}
+void snack11()
+{
+    bool Words()
+    {
+        Console.WriteLine("inserisci una parola");
+        string w1= Console.ReadLine();
+        string w2 = Console.ReadLine();
+        bool sold = false;
+        var condition = w1.Length > w2.Length ? $"la parola più lungha è:{w1}" : $"la parola più lungha è:{w2}";
+        if(w1 == w2)
+        {
+             Console.WriteLine("le parole sono uguali");
+            return true;
+        }
+        else
+        {
+            Console.WriteLine(condition);
+            return true;
+        }
+        
+    }
+    Words();
 }
 
 
