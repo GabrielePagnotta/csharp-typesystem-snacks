@@ -7,7 +7,8 @@
 //snack6();
 //snack7();
 //snack8();
-snack9();
+//snack9();
+snack10();
 
 
 void snack1()
@@ -195,6 +196,26 @@ void snack8()
         Console.WriteLine(Numbers[i]);
     }
 }
-
-
+void snack10()
+{
+    var RandomNumber= new Random();
+  
+    Console.WriteLine("inserisci un numero");
+    int N =  Convert.ToInt32(Console.ReadLine());
+        for (int i = 1;i <= N; i++)
+        {
+        Console.WriteLine($"array{i}[");
+        int[] newarray = new int[10];
+        for (int j = 0; j < newarray.Length; j++)
+        {
+        newarray[i] = RandomNumber.Next(1, 101);
+        Console.WriteLine(newarray[i]);
+        }
+        Console.Write("],");
+        
+        }
     
+}
+
+
+
